@@ -26,7 +26,8 @@ Some images, videos, and game assets belong to their respective owne
 ⭐ Support
 If you like this project, consider giving it a ⭐ on GitHub!
 
-📸 Preview
+## 📸 Preview
+
 <img src="Image-1.jpeg" width="45%" />
 <img src="Image-3.jpeg" width="45%" />
 <img src="Image-4.jpeg" width="45%" />
