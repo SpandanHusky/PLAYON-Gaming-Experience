@@ -1,0 +1,906 @@
+:root {
+    --gaming-font:  "Nova Square", sans-serif;
+    --Inter: "Inter", sans-serif;
+    --main-blue: #03658f;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Nova Square", sans-serif;
+    height: 100vh;
+    color: #fff;
+}
+
+#login-section {
+    background: url("/Image\ folder/asphalt-9.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+#login-section::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+#login-section {
+    height: 100%;
+}
+
+.sign-in-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 120px;
+}
+
+.sign-in-options label {
+    color: #fff;
+    z-index: 1;
+    position: relative;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.sign-in-options input {
+    position: relative;
+    z-index: 1;
+    height: 30px;
+    width: 270px;
+    border-radius: 5px;
+    background: transparent;
+    border: 1px solid #fff;
+    margin-left: 50px;
+    color: #fff;
+    outline: none;
+    font-family: var(--gaming-font);
+    font-size: 15px;
+}
+
+.sign-in-options input::placeholder {
+    color: #fff;
+}
+
+.sign-in-options input:hover {
+    border: 1px solid blueviolet;
+}
+
+.login-email label {
+    margin-left: 75px;
+}
+
+.login-password label {
+    margin-left: 50px;
+}
+
+.login-username label {
+    margin-left: 55px;
+}
+
+.sign-in-btn {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    padding: 10px;
+    background: red;
+    border-radius: 3px;
+    color: #fff;
+    text-decoration: none;
+    width: 200px;
+    margin-left: 570px;
+    margin-top: 60px;
+    position: relative;
+    z-index: 1;
+}
+
+#game-section {
+    background-color: #000;
+    height: 690vh;
+}
+
+.games {
+    background: url('/Image folder/valorant-edited.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    position: relative;
+    top: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+
+.logo {
+    display: inline-block;
+}
+
+.logo-img {
+    height: 50px;
+    width: 50px;
+    margin-left: 10px;
+    margin-top: 5px;
+    z-index: 1;
+    position: relative;
+}
+
+.gaming-opt {
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    bottom: 20px;
+    margin-left: 40px;
+}
+
+.gaming-btn {
+    padding: 10px;
+    border: 2px solid #fff;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    bottom: 20px;
+    margin-left: 520px;
+}
+
+.gaming-btn-special {
+    background: #03658f;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    bottom: 20px;
+    margin-left: 20px;
+}
+
+.non-displaying-gaming-button {
+    display: none;
+}
+
+.special-effect {
+    color: #fff;
+    font-size: 50px;
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
+    display: none;
+}
+
+.special-btn {
+    padding: 14px;
+    border-radius: 5px;
+    background: #037cb0;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    display: none;
+    transition: all .20s ease;
+}
+
+.special-btn:hover {
+    background: #03658f;
+}
+
+.games:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.games:hover .special-effect {
+    display: block;
+    z-index: 1;
+    position: relative;
+}
+
+.games:hover .special-btn {
+    display: inline-block;
+    margin-left: 550px;
+    margin-top: 50px;
+    z-index: 1;
+    position: relative;
+}
+
+.games-board {
+    height: 450px;
+    width: 1225px;
+    background: #111;
+    border-radius: 7px;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.image-row-1, .image-row-2 {
+    display: flex;
+    justify-content: center;
+}
+
+.image-row-1 img, .image-row-2 img {
+    height: 200px;
+    width: 200px;
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-top: 10px;
+    transition: all .20s ease-in-out;
+    cursor: pointer;
+}
+
+.image-row-2 img {
+    margin-top: 30px;
+}
+
+.delete-image {
+    display: none;
+}
+
+.image-row-1 img:hover, .image-row-2 img:hover {
+    scale: 1.1;
+}
+
+.hr-line-1 {
+    margin-top: 400px;
+    width: 95%;
+    margin-left: 20px;
+}
+
+.footer-style {
+    background: linear-gradient(black, #03658f);
+    height: 430px;
+    width: 100%;
+    padding-top: 50px;
+}
+
+table {
+    color: #fff;
+}
+
+.footer-style table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 15px;
+}
+
+.footer-style th, .footer-style td {
+    padding: 10px;
+    text-align: left;
+}
+
+.footer-style th {
+    font-weight: bolder;
+}
+
+.footer-style td {
+    font-weight: normal;
+    font-family: var(--Inter);
+}
+
+.footer-style td:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.footer-style th {
+    font-weight: bold;
+}
+
+.box-2 {
+    margin-top: -20px;
+}
+
+.trending-heading {
+    margin-top: 80px;
+    margin-left: 50px;
+}
+
+.trending-span {
+    color: red;
+    text-decoration: underline;
+}
+
+.cards-section {
+    display: flex;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+    margin-top: 40px;
+    margin-left: 50px;
+    overflow-y: hidden;
+}
+
+.card {
+    height: 475px;
+    width: 300px;
+    flex: 0 0 auto;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.card-img {
+    position: relative;
+}
+
+.card-img img {
+    height: 270px;
+    width: 298px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: block;
+}
+
+.card-img::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 60%;
+    width: 100%;
+    background:  linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+}
+
+.card-h2 {
+    margin-top: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.card-p {
+    margin-top: 14px;
+    text-align: center;
+    color: #ccc;
+    font-family: var(--Inter);
+    line-height: 21px;
+}
+
+.play-btn {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.play-btn a {
+    text-decoration: none;
+    color: #fff;
+    background: var(--main-blue);
+    padding: 10px;
+    margin-top: 20px;
+    transition: all 0.20s ease;
+}
+
+.play-btn a:hover {
+    background: #024a69;
+}
+
+.more-circle {
+    height: 70px;
+    /* width: 160px; */
+    padding: 27px;
+    border-radius: 50%;
+    background: #037cb0;
+    margin-right: 20px;
+    margin-top: 120px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.more-circle:hover {
+    background: #024a69;
+}
+
+.category-h1 {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.vibe-options {
+    display: flex;
+    justify-content: center;
+}
+
+.vibe-options ul {
+    display: flex;
+}
+
+.vibe-options ul li {
+    list-style: none;
+    margin-left: 50px;
+    margin-top: 30px;
+    background: royalblue;
+    padding: 12px;
+    border-radius: 7px;
+    color: #fff;
+    transition: all 0.30s ease;
+}
+
+.vibe-options ul a {
+    text-decoration: none;
+}
+
+.vibe-options ul li:hover {
+    background: #1a49d7;
+}
+
+.hr-2 {
+    margin-top: 50px;
+}
+
+.animation-1 {
+    animation: Lift1 3s ease-out infinite;
+}
+
+@keyframes Lift1 {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+
+}
+
+.animation-2 {
+    animation: Lift1 3s ease-out infinite;
+    animation-delay: 1s;
+}
+
+@keyframes Lift2 {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-7px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+
+}
+
+.featured-container {
+    display: flex;
+}
+
+.f1 {
+    margin-top: 70px;
+    margin-left: 50px;
+    text-decoration: underline;
+}
+
+.featured-img img {
+    height: 500px;
+    width: 750px;
+    margin-top: 50px;
+    margin-left: 10px;
+    border-radius: 7px;
+}
+
+.featured-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.featured-h1 {
+    margin-top: 70px;
+    margin-left: 30px;
+}
+
+.featured-paragraph {
+    margin-top: 20px;
+    margin-left: 30px;
+    line-height: 24px;
+    margin-right: 20px;
+    font-family: var(--Inter);
+    color: #ccc;
+}
+
+.blog-btn {
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.blog-btn a {
+    background: var(--main-blue);
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: all .30s ease;
+}
+
+.blog-btn a:hover {
+    background: #fff;
+    color: #000;
+}
+
+.esports-intro {
+    text-align: center;
+    margin-top: 90px;
+}
+
+.esports-title {
+    font-size: 40px;
+}
+
+.esports-subtitle {
+    font-style: italic;
+}
+
+.logos {
+    display: flex;
+    margin-top: 60px;
+    justify-content: center;
+}
+
+.logos-h1 {
+    margin-top: 100px;
+    font-size: 40px;
+    margin-left: 30px;
+    text-shadow: 3px 3px 5px #037cb0;
+}
+
+.logos img {
+    height: 250px;
+    width: 250px;
+    margin-left: 10px;
+}
+
+.match-content {
+    text-align: center;
+    margin-top: 20px;
+    line-height: 29px;
+}
+
+.common-font {
+    font-family: var(--Inter);
+    color: #ccc;
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.special-font {
+    font-size: 23px;
+    margin-left: 10px;
+    font-weight: 600;
+}
+
+.match-btns {
+    margin-top: 50px;
+    
+}
+
+.match-btns a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    background: var(--main-blue);
+    cursor: pointer;
+    transition: all .20s ease;
+}
+
+.match-btns a:hover {
+    background: #04445f;
+}
+
+.match-btn-1 {
+    margin-left: 450px;
+}
+
+.match-btn-2 {
+    margin-left: 220px;
+}
+
+.logos-2 {
+    margin-top: 70px;
+}
+
+.cta-div {
+    background: linear-gradient(to right, #0092ed, blue, purple);
+    margin-top: 50px;
+    height: 450px;
+    margin-left: 130px;
+    margin-right: 50px;
+    border-radius: 20px;
+    display: flex;
+    width: 1090px;
+}
+
+.cta-elements {
+    text-align: center;
+    margin-left: 50px;
+}
+
+.cta-h1 {
+    padding-top: 20px;
+}
+
+.cta-p {
+    margin-top: 30px;
+    font-size: 22px;
+    line-height: 30px;
+}
+
+.cta-p-2 {
+    margin-top: 30px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.cta-btn a {
+    text-decoration: none;
+    cursor: pointer;
+    padding: 11px;
+    background: #fff;
+    color: #000;
+}
+
+.cta-btn {
+    transition: all .5s ease;
+    margin-top: 45px;
+    text-align: center;
+}
+
+.cta-btn:hover {
+    scale: 1.06;
+}
+
+.image-div-esports img {
+    height: 200px;
+    width: 200px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.es-img-1 {
+    margin-left: 100px;
+}
+
+.special-es-img img {
+    margin-left: 100px;
+    width: 410px;
+    height: 220px;
+}
+
+.end-section {
+    background: url('/Image\ folder/elden_ring.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.end-section::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    backdrop-filter: blur(6px);;
+    height: 100%;
+    width: 100%;
+}
+
+.end-section h1 {
+    position: relative;
+    font-size: 60px;
+    z-index: 1;
+    text-align: center;
+}
+
+.end-btn {
+    margin-top: 30px;
+}
+
+.end-btn a {
+    position: relative;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px;
+    background: #4a33e1;
+    text-decoration: none;
+    transition: all .20s ease;
+}
+
+.end-btn a:hover {
+    background: #fff;
+    color: #000;
+}
+
+.FAQ-section {
+    height: 100vh;
+    background: #000;
+}
+
+.faq-h1 {
+    padding-top: 30px;
+    margin-left: 20px;
+}
+
+.faq-box {
+    background: #444;
+    height: 80px;
+    width: 1200px;
+    margin-top: 20px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.30s ease;
+}
+
+.faq-box:hover {
+    background: #666;
+}
+
+.faq-box-1 {
+    margin-top: 50px;
+}
+
+.faq-box h2 {
+    margin-left: 10px;
+}
+
+.content-disp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content-disp span {
+    font-size: 30px;
+    margin-right: 15px;
+}
+
+.horizontal-stripe {
+    background: #111;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-stripe a {
+    color: #fff;
+    font-size: 24px;
+    margin-right: 100px;
+}
+
+.last-a {
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 600px) {
+   .sign-in-btn {
+    margin-left: 70px;
+   }
+
+   p {
+    font-size: 23px;
+   }
+
+   .card-p {
+    line-height: 30px;
+   }
+
+   .card {
+    height: 570px;
+   }
+
+   #section-2v {
+    margin-top: 10px;
+   }
+
+   #game-section {
+    height: 665vh;
+    width: 1400px;
+   }
+
+   .gaming-btn {
+    margin-left: 0px;
+   }
+
+   .non-displaying-gaming-button {
+    display: inline-block;
+    background: #03658f;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    bottom: 20px;
+    margin-left: 20px;
+   }
+
+   .gaming-opt {
+    margin-left: 5px;
+   }
+
+   .gaming-btn {
+    margin-left: 60px;
+   }
+
+   .image-row-1 img, .image-row-2 img {
+    margin-left: 20px;
+   } 
+
+   .games-board {
+    margin-top: 100px;
+    width: 1380px;
+    height: 500px;
+    margin-left: 15px;
+   }
+
+   .image-row-1, .image-row-2 {
+    display: inline-block;
+   }
+
+   .footer-style {
+    width: 1400px;
+   }
+
+   .end-section {
+    width: 387%;
+   }
+
+   .FAQ-section {
+    width: 387%;
+   }
+
+   .horizontal-stripe {
+    height: 200px;
+   }
+
+   .content-stripe a {
+    color: #fff;
+    font-size: 68px;
+    margin-right: 120px;
+    margin-left: 50px;
+    }
+
+    .faq-h1 {
+        margin-left: 50px;
+    }
+
+    .footer-style {
+        height: 600px;
+    }
+
+    .faq-box {
+        margin-left: 50px;
+    }
+}
