@@ -28,8 +28,8 @@ If you like this project, consider giving it a ⭐ on GitHub!
 
 ## 📸 Preview
 
-<img src="Image-1.jpeg" width="45%" />
-<img src="Image-3.jpeg" width="45%" />
-<img src="Image-4.jpeg" width="45%" />
-<img src="Image-5.jpeg" width="45%" />
 <img src="Image-6.jpeg" width="45%" />
+<img src="Image-5.jpeg" width="45%" />
+<img src="Image-4.jpeg" width="45%" />
+<img src="Image-3.jpeg" width="45%" />
+<img src="Image-1.jpeg" width="45%" />
